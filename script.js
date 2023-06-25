@@ -151,10 +151,38 @@ function startFireWork() {
 }
 
 // function([string1, string2],target id,[color1,color2])
-consoleText(['Hello DYC.', 'Console Text hei sup woah so every space is different line?', 'Made with Love.'], 'text', ['tomato', 'rebeccapurple', 'lightblue']);
+consoleText(['Hello DYC.',
+      'Good to see you here.',
+      'I have a little surprise for you.',
+  'Obviously, something big happened yesterday.',
+
+      'Huge',
+
+  'Tremendous',
+      'Enormous',
+      'Gargantuan',
+      'Ok... you get the idea',
+'It\'s so big that it\'s scary',
+'But I\'m glad that it happened',
+'Because now, I can focus on what I do best',
+'Which is to love you',
+'with all my heart, soul, and being',
+'And THIS is just the beginning',
+'Now you probably already know what this is',
+'But I\'m not just going to give it to you',
+'We are going to build your favorite thing together',
+'Just like how we are going to build our future',
+      'Together',
+'Ready?',
+'Now, start clicking on the black screen',
+'FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS!FIREWORKS! FIREWORKS! FIREWORKS! FIREWORKS!',
+    'Made with Rove.',
+      'BZX'],
+    'text');
+
 
 function consoleText(words, id, colors) {
-  if (colors === undefined) colors = ['#fff'];
+  if (colors === undefined) colors = ['#e791bf'];
   var visible = true;
   var con = document.getElementById('console');
   var letterCount = 1;
@@ -188,7 +216,7 @@ function consoleText(words, id, colors) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
     }
-  }, 120)
+  }, 80)
   window.setInterval(function () {
     if (visible === true) {
       con.className = 'console-underscore hidden'
